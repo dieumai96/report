@@ -1,0 +1,50 @@
+/* Styles go here */
+
+.page-header, .page-header-space {
+    height: 100px;
+  }
+  
+  .page-footer, .page-footer-space {
+    height: 100px;
+  
+  }
+  
+  .page-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    // background: yellow; /* for demo */
+    background: url("https://i.imgur.com/cGrYMQH.png") no-repeat center top;
+    background-size: 100%;
+    
+  }
+  
+  .page-header {
+    position: fixed;
+    top: 0mm;
+    width: 100%;
+    // background: yellow; /* for demo */
+    background: url("https://i.imgur.com/ZQESkZm.png") no-repeat center center;
+    background-size: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .page {
+    page-break-after: always;
+  }
+  
+  @page {
+    margin: 20mm
+  }
+  
+  @media print {
+     thead {display: table-header-group;} 
+     tfoot {display: table-footer-group;}
+     
+     button {display: none;}
+     
+     body {margin: 0;}
+  }
+  #textprint:hover .button-print{
+    display: block
+  }
